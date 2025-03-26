@@ -9,7 +9,7 @@ const OpenAIComponent = () => {
     //e.preventDefault();
     try {
       const result = await axios.post(
-        'https://api.openai.com/v1/engines/davinci-codex/completions',
+        'https://api.openai.com/v1/engines/text-davinci-003/completions',
         {
           prompt: input,
           max_tokens: 100,
