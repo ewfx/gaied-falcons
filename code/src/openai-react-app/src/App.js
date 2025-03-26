@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";  
-import DynamicTable from "./components/DynamicTable";
+import OpenAIComponent from "./OpenAIComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 var jsonData=[
@@ -117,7 +117,7 @@ function App() {
     </div>
     <div className="container">
       <h1>Data Dashboard</h1>
-      <DynamicTable emailData={emailData} />
+      <OpenAIComponent emailData={emailData} />
 
     </div>
   </>
