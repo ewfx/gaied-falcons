@@ -1,5 +1,5 @@
 1. Clone the Repository
-   git clone https://github.dev/ewfx/gaied-next-gen-tech
+   git clone https://github.dev/ewfx/gaied-falcons
 
 2.  Install Required Dependencies
     pip install fastapi==0.115.8 google-ai-generativelanguage==0.6.17 greenlet==3.1.1 \
