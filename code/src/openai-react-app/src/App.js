@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import "./styles.css";  
+import React, { useState, useEffect } from "react"; 
 import OpenAIComponent from "./OpenAIComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -93,9 +92,8 @@ var jsonData=[
 }
 ]
 function App() {
-  const [emailData, setEmailData] = useState([]);
-  const emailData1 = jsonData.length > 0 ? jsonData[0].data : [];
-
+  const [emailData, setEmailData] = useState(jsonData.length > 0 ? jsonData[0].data : []);
+ 
   const API_URL = "http://localhost:8000/process-emails";
   useEffect(() => {
     fetch(API_URL)
@@ -116,7 +114,7 @@ function App() {
       </header>
     </div>
     <div className="container">
-      <h1>Data Dashboard</h1>
+      <h1>Classified Data</h1>
       <OpenAIComponent emailData={emailData} />
 
     </div>
