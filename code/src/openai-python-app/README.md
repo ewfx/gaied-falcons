@@ -1,14 +1,18 @@
 1. Clone the Repository
-   git clone https://github.dev/ewfx/gaied-falcons/openai-python-app
+   git clone https://github.dev/ewfx/gaied-falcons/code/src
+
+   change directory to python app from terminal
+   cd openai-python-app
 
 2.  Install Required Dependencies
+
     pip install fastapi==0.115.8 google-ai-generativelanguage==0.6.17 greenlet==3.1.1
     langchain==0.3.21 langchain-community==0.3.20 langchain-core==0.3.47
     langchain-google-genai==2.1.1 langchain-text-splitters==0.3.7 PyMuPDF==1.25.4 
     streamlit==1.42.2 pytz==2025.1 PyYAML==6.0.2 pyjson5==1.6.8 pyparsing==3.2.1
     pypdf==5.4.0
 
-    pip install uvicorn scikit-learn
+    pip install uvicorn scikit-learn sentence_transformers spacy quopri re
 
 3.  Configure Google Gemini API Key
     Set up your Google Gemini API key inside the configuration file:
@@ -29,9 +33,12 @@
 5.  Run the UI Application
     Open a new terminal, navigate to the React UI directory, and start the frontend
 
-    cd D:\NextGenAI-EC\react-ui\loan-dashboard
+    cd openai-react-app
+    npm install and then 
     npm start
 
-This will launch the application in your default web browser, displaying the results in table and chart formats.
+This will launch the application in your default web browser with port 3000, displaying the classified data results in table 
+
+Endpoint : http://localhost:3000
 
 
